@@ -1,0 +1,106 @@
+/* global properties */
+*{
+    margin: 0;
+}
+
+/* global properties */
+
+
+.container{
+    display: grid;
+    grid-template-columns: 300px 1fr;
+    height: 100vh;
+}
+
+.sidebar{
+    background-color: #1992D4;
+    grid-template-columns: 1fr;
+    padding: 20px 10px;
+    color: white;
+    grid-row: 1/-1;
+}
+.sidebar .dashboard,
+.sidebar .icon{
+    margin-bottom: 40px;
+    padding: 0 10px;
+}
+.icon div{
+    padding:8px;
+}
+.icon span{
+    font-size: 25px;
+    padding-left: 13px;
+}
+
+.dashboard{
+    font-size: 40px;
+}
+
+#dashboard-icon{
+    width: 40px;
+    height: 100%;
+}
+
+/* header css */
+.header{
+    display: grid;
+    grid-template-columns:  1fr;
+    background-color: green;
+    height: 200px;
+    padding: 20px 45px;
+    align-items: center;
+}
+.header-top{
+    display: grid;
+    grid-template-columns: 20px 1fr 20px 20px 150px;
+}
+.header-bottom{
+    display: grid;
+    grid-template-columns: 100px 1fr 200px;
+}
+
+
+/* header css */
+
+/* contect style */
+.content{
+    display: grid;
+    grid-template-columns: 1fr 400px;
+    background-color: red;
+    grid-column:2/-1 ;
+    grid-row: 2/-1;
+}
+
+.project-card{
+    width: 350px;
+    height: 200px;
+    background-color: yellow;
+    border-left: 10px solid gray;
+    margin-left: 50px;
+    padding: 30px 10px 10px 15px;    
+    margin: 10px;
+}
+.card-button{
+    padding-block: 40px;
+    display: grid;
+    grid-template-columns: 1em 1em 1em;
+    gap: 20px;
+    justify-content: center;
+}
+.card-button button{
+    border: none;
+    background-color: transparent;
+}
+.pojects-sectio{
+    padding: 10px;
+}
+.project{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+
+/* announcement-section */
+.announcement-section{
+    background-color: blue;
+}
