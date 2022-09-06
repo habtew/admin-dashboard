@@ -186,5 +186,9 @@ footer{
     text-justify: center;
 }
 
+.card-button button img{
+    background-color: #1992D4;
+    border-radius: 5px;
+}
 
 /* for smaller devies */
