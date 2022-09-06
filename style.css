@@ -12,8 +12,12 @@
     height: 100vh;
 }
 
+section{
+    background-color: #E2E8F0;
+}
+
 .sidebar{
-    background-color: #1992D4;
+    background-color: rgba(25,146,212, 0.7);
     grid-template-columns: 1fr;
     padding: 20px 10px;
     color: white;
@@ -21,7 +25,7 @@
 }
 .sidebar .dashboard,
 .sidebar .icon{
-    margin-bottom: 40px;
+    margin-bottom: 40px; 
     padding: 0 10px;
 }
 .icon div{
@@ -45,20 +49,58 @@
 .header{
     display: grid;
     grid-template-columns:  1fr;
-    background-color: green;
-    height: 200px;
+    background-color: #363740;
+    height: 20vh;
     padding: 20px 45px;
     align-items: center;
+    color: #fff
 }
 .header-top{
     display: grid;
-    grid-template-columns: 20px 1fr 20px 20px 150px;
+    grid-template-columns: 40px 1fr 50px 100px 150px;
+    justify-content: center;
+    align-items: center;
 }
-.header-bottom{
-    display: grid;
-    grid-template-columns: 100px 1fr 200px;
+.header-top input{
+    width: 70%;
+    border-radius: 15px;
+    height: 30px;
+    border: 1px solid white;
+    background-color: #E2E8F0;
+
+}
+#header-icon-small{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding-right: 10px;
 }
 
+#header-icon-large{
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    padding-right: 10px;
+}
+
+.header-bottom{
+    display: grid;
+    grid-template-columns: 100px 1fr 400px;
+}
+.buttons button{
+    background-color: #1992D4;
+    font-size: 20px;
+    padding: 10px;
+    border: 1px solid #1992D4;
+    border-radius: 30px;
+    width: calc(350px/3);
+    color: #fff;
+}
+.buttons button:hover,
+.buttons button:focus{
+    background-color: white;
+    color: black
+}
 
 /* header css */
 
@@ -66,19 +108,22 @@
 .content{
     display: grid;
     grid-template-columns: 1fr 400px;
-    background-color: red;
+    padding:40px 20px;
     grid-column:2/-1 ;
     grid-row: 2/-1;
+    height: 76vh;
 }
+
 
 .project-card{
     width: 350px;
-    height: 200px;
-    background-color: yellow;
-    border-left: 10px solid gray;
+    height: 150px;
+    border-left: 15px solid green;
     margin-left: 50px;
     padding: 30px 10px 10px 15px;    
     margin: 10px;
+    background-color: #fff;
+    border-radius: 10px;
 }
 .card-button{
     padding-block: 40px;
@@ -102,5 +147,44 @@
 
 /* announcement-section */
 .announcement-section{
-    background-color: blue;
+    padding-bottom: 20px;
 }
+
+.announcement-card{
+    padding: 20px;
+    background-color: white;
+    margin-top: 10px;
+}
+#line{
+  margin-top: 15px;
+  margin-bottom: 15px
+}
+
+
+/* trending */
+.trending-section{
+    padding-top: 20px;
+}
+
+.trending-card{
+    padding: 20px;
+    background-color: #fff;
+
+}
+.trending-card .cardd{
+    display: grid;
+    grid-template-columns: 50px 1fr;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    
+}
+
+/* footer */
+footer{
+    font-size: 25px;
+    text-align: center;
+    text-justify: center;
+}
+
+
+/* for smaller devies */
